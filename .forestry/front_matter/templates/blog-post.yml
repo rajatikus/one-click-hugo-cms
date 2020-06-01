@@ -28,3 +28,5 @@ fields:
     schema:
       format: markdown
   label: isi
+pages:
+- content/01-001.md
