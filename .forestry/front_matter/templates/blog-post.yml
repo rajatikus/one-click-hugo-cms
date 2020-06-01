@@ -1,4 +1,30 @@
 ---
 label: Blog Post
 hide_body: false
-fields: []
+fields:
+- name: judul
+  type: text
+  config:
+    required: false
+  label: Judul
+  description: isi judul
+- name: kategori
+  type: tag_list
+  default: []
+  label: kategori
+  description: Idamaan Mandiri , Idamaan Sehat, Idamaan Keluarga, Idamaan Taat
+- name: hero-image
+  type: file
+  config:
+    maxSize: 64
+  label: hero-image
+  description: gambar besar utama
+- name: isi
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: isi
